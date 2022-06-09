@@ -11,6 +11,7 @@
 		E21D0B6E285135E300DCF7C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D0B6D285135E300DCF7C9 /* ContentView.swift */; };
 		E21D0B70285135E400DCF7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21D0B6F285135E400DCF7C9 /* Assets.xcassets */; };
 		E21D0B73285135E400DCF7C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21D0B72285135E400DCF7C9 /* Preview Assets.xcassets */; };
+		E21D0B7A28513C3400DCF7C9 /* CupertinoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D0B7928513C3400DCF7C9 /* CupertinoDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E21D0B6D285135E300DCF7C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E21D0B6F285135E400DCF7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E21D0B72285135E400DCF7C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E21D0B7928513C3400DCF7C9 /* CupertinoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupertinoDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				E21D0B6B285135E300DCF7C9 /* SwiftUI_Charts_WWDC2022App.swift */,
 				E21D0B6D285135E300DCF7C9 /* ContentView.swift */,
+				E21D0B7928513C3400DCF7C9 /* CupertinoDetails.swift */,
 				E21D0B6F285135E400DCF7C9 /* Assets.xcassets */,
 				E21D0B71285135E400DCF7C9 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				E21D0B6E285135E300DCF7C9 /* ContentView.swift in Sources */,
 				E21D0B6C285135E300DCF7C9 /* SwiftUI_Charts_WWDC2022App.swift in Sources */,
+				E21D0B7A28513C3400DCF7C9 /* CupertinoDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
