@@ -12,6 +12,7 @@
 		E21EB3072857845E005FE804 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21EB3062857845E005FE804 /* ViewController.swift */; };
 		E21EB30C28578460005FE804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21EB30B28578460005FE804 /* Assets.xcassets */; };
 		E21EB30F28578460005FE804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21EB30D28578460005FE804 /* LaunchScreen.storyboard */; };
+		E21EB31728585EF8005FE804 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21EB31628585EF8005FE804 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E21EB30B28578460005FE804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E21EB30E28578460005FE804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E21EB31028578460005FE804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E21EB31628585EF8005FE804 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				E21EB3022857845E005FE804 /* AppDelegate.swift */,
 				E21EB3042857845E005FE804 /* SceneDelegate.swift */,
 				E21EB3062857845E005FE804 /* ViewController.swift */,
+				E21EB31628585EF8005FE804 /* Model.swift */,
 				E21EB30B28578460005FE804 /* Assets.xcassets */,
 				E21EB30D28578460005FE804 /* LaunchScreen.storyboard */,
 				E21EB31028578460005FE804 /* Info.plist */,
@@ -137,6 +140,7 @@
 				E21EB3072857845E005FE804 /* ViewController.swift in Sources */,
 				E21EB3032857845E005FE804 /* AppDelegate.swift in Sources */,
 				E21EB3052857845E005FE804 /* SceneDelegate.swift in Sources */,
+				E21EB31728585EF8005FE804 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
