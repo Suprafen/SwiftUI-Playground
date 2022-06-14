@@ -8,59 +8,38 @@
 import SwiftUI
 import Charts
 
-struct SalesSummary: Identifiable {
-    let weekday: Date
-    let sales: Int
+
+struct Workout: Identifiable {
+    var workoutTime: Int
+    var date: Date
     
-    var id: Date { weekday }
+    var id: Date { date }
 }
 
-let cupertinoData: [SalesSummary] = [
-
-    .init(weekday: Date(timeIntervalSinceNow: 86400), sales: 340),
-
-    .init(weekday: Date(timeIntervalSinceNow: 86400 * 2), sales: 349),
-    
-    .init(weekday: Date(timeIntervalSinceNow: 86400 * 3), sales: 380),
-    
-    .init(weekday: Date(timeIntervalSinceNow: 86400 * 4), sales: 322),
-    
-    .init(weekday: Date(timeIntervalSinceNow: 86400 * 5), sales: 405),
-    
-    .init(weekday: Date(timeIntervalSinceNow: 86400 * 6), sales: 376),
-    
-    .init(weekday: Date(timeIntervalSinceNow: 86400 * 7), sales: 351)
+var workouts: [Workout] = [
+    .init(workoutTime: 650, date: Date(timeIntervalSinceNow: 86400)),
+    .init(workoutTime: 431, date: Date(timeIntervalSinceNow: 86400 * 2)),
+    .init(workoutTime: 589, date: Date(timeIntervalSinceNow: 86400 * 3)),
+    .init(workoutTime: 862, date: Date(timeIntervalSinceNow: 86400 * 4)),
+    .init(workoutTime: 387, date: Date(timeIntervalSinceNow: 86400 * 5)),
+    .init(workoutTime: 401, date: Date(timeIntervalSinceNow: 86400 * 6)),
+    .init(workoutTime: 520, date: Date(timeIntervalSinceNow: 86400 * 7))
 ]
+
 
 struct CupertinoDetails: View {
     var body: some View {
-        VStack(alignment: .trailing) {
-            Chart (cupertinoData) { element in
-                //            BarMark (
-                //                x: .value("Day", element.weekday, unit: .day),
-                //                y: .value("Sales", element.sales)
-                //            )
-                
-//                LineMark(x: .value("Day", element.weekday, unit: .day),
-//                         y: .value("Sales", element.sales)
-//                )
-//
-//                PointMark(x: .value("Day", element.weekday, unit: .day),
-//                          y: .value("Sales", element.sales)
-//                          )
-                
-//                AreaMark(x: .value("Day", element.weekday, unit: .day),
-//                         y: .value("Sales", element.sales)
-//                         )
-                
-//                RuleMark(x: .value("Day", element.weekday, unit: .day))
-                RectangleMark(x: .value("Day", element.weekday, unit: .day),
-                              y: .value("Sales", element.sales)
+
+            Chart (workouts) { element in
+                BarMark(x: .value("Day", element.date, unit: .weekday),
+                              y: .value("Time", element.workoutTime)
                 )
-            }.padding(60)
+            }.padding([.bottom, .top], 200)
+            .padding([.leading, .trailing], 30)
+            .foregroundColor(.black)
+            .chartXAxis(.hidden)
+            .chartYAxis(.hidden)
             
-            Spacer()
-        }
     }
 }
 

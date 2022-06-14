@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_Charts_WWDC2022App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CupertinoDetails()
         }
     }
 }
